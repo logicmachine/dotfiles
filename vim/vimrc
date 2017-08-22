@@ -1,0 +1,13 @@
+set nocompatible
+set fenc=utf-8
+set noswapfile
+
+syntax on
+highlight Comment ctermfg=Blue
+set hlsearch
+
+set statusline=%{expand('%:p:t')}\ %<[%{expand('%:p:h')}]%=\ %m%r%y%w[%{&fenc!=''?&fenc:&enc}][%{&ff}][%3l,%3c]
+set laststatus=2
+
+filetype plugin indent on
+au BufNewFile,BufRead *.cuh setf cuda
