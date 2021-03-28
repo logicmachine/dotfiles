@@ -240,3 +240,13 @@ if version >= 508 || !exists("did_hlsl_syntax_inits")
 endif
 
 let b:current_syntax = "hlsl"
+
+set noexpandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set cindent
+set cinoptions+=:0,g0
+
+" vim: ts=8
